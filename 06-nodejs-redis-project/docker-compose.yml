@@ -3,7 +3,19 @@ services:
     redis-server:
         image: 'redis'
     node-app:
+        restart: on-failure
         build: .
         ports:
             - "4001:8081"
 
+# commands list
+# docker-compose up --build to rebuild the project
+# docker-compose up -d to up containers in background
+# docker-compose down to stop containers
+
+
+# restart polices
+# "no"; always; on-failure; unless-stopped
+# import process.exit(0) in case of value different of zero
+# will exit by failure.
+# with 0 is a programmated exit
