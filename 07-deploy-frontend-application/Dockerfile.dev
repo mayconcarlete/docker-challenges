@@ -10,6 +10,13 @@ RUN npm install
 
 CMD ["npm", "run", "start"]
 
+#COMMANDS
+
 #docker run -it -p 3000:3000 IMAGE_ID
 
 #docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app ID_CONTAINER
+
+#Tests
+#re-usando um container que já existe
+#docker exec -it CONTAINER_ID npm run test(com isso voce vai ter os comandos de menu dos tests disponiveis no terminal)
+
