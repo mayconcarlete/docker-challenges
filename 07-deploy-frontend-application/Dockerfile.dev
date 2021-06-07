@@ -20,3 +20,6 @@ CMD ["npm", "run", "start"]
 #re-usando um container que já existe
 #docker exec -it CONTAINER_ID npm run test(com isso voce vai ter os comandos de menu dos tests disponiveis no terminal)
 
+#Attach
+#para poder ter controle do stdin stdout e stderr do container desejado
+#docker container attach ID_CONTAINER 
